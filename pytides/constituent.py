@@ -2,7 +2,8 @@
 import string
 import operator as op
 import numpy as np
-import nodal_corrections as nc
+from functools import reduce
+import pytides.nodal_corrections as nc
 
 class BaseConstituent(object):
 	xdo_int = {
